@@ -6,7 +6,7 @@ session = mysqlx.get_session({
     'host': 'localhost',
     'port': 33060,
     'user': 'root',
-    'password': '1732',
+    'password': '----',
     'schema': 'projekt'
 })
 
