@@ -1,0 +1,189 @@
+body{
+  margin: 0 auto;
+  font-family: Consolas;
+  background-color: #b87333;
+  color: white;
+  font-size: 20px;
+}
+
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5f4c4c;
+
+}
+
+
+.topnav a {
+  display: block;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.topnav-right {
+  float: right;
+}
+
+.welcomemsg {
+  margin: 200px;
+  text-align: center;
+}
+
+.kurser {
+  list-style-type: none;
+  margin: 200px;
+  font-size: 30px;
+
+}
+
+.kurser li{
+  margin: 30px;
+
+}
+
+.kurser li a{
+  margin: 30px;
+  color: white;
+  text-decoration: none;
+  transition: font-size 0.3s;
+}
+
+.kurser li a:hover{
+  font-size: 45px;
+}
+
+
+
+/* Produkt card*/
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: 50px;
+}
+
+.product-image {
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-top: 10px;
+  color: black;
+}
+
+.product-description {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.product-price {
+  font-size: 25px;
+  color: #00BFFF;
+  margin-top: 10px;
+}
+
+.product-button {
+  display: inline-block;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.order {
+  text-align: center;
+}
+
+
+.order li {
+  font-size: 30px;
+  list-style-type: none
+}
+
+.order li.price {
+  margin-top: 100px;
+  color: #50C878;
+  list-style-type: none
+}
+
+
+
+.my-form {
+  max-width: 400px;
+  margin: 100px auto;
+}
+
+.my-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.my-form input[type="text"],
+.my-form input[type="tel"],
+.my-form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+
+.thanks {
+  text-align: center;
+  margin-top: 150px;
+}
+
+
+.top-sellers {
+  text-align: center;
+}
+
+.seller {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #849483;
+}
+
+.seller h3 {
+  margin: 10px 0;
+  color: whitesmoke;
+}
+
+.seller p {
+  color: whitesmoke;
+}

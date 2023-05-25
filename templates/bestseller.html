@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+{% block title %}Kursboksaffären - Top listan{% endblock %} 
+
+{%block content %}
+  <div class="top-sellers">
+    <h2>Top 3 bästa säljare</h2>
+
+  {% for element in sellerLst%}
+
+    <div class="seller">
+      <h3>{{element[0]}}</h3>
+      <p>Författare: {{element[1]}}</p>
+      <b><p style="color: #00BFFF;">Sålda exemplar: {{element[2]}}</p></b>
+    </div>
+  {% endfor %}
+
+  <h3>Total insamling till <i>Blekinge Studentkår</i></h2>
+  <h3 style="color: #50C878;">{{donated}} SEK</h3>
+
+  </div>
+
+{% endblock %}

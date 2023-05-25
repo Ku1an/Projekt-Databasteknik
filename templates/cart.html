@@ -1,0 +1,29 @@
+{% extends "base.html" %} 
+{% block title %}Kursboksaffären - Kundvagn{% endblock %} 
+
+{%block content %}
+<div class="order">
+
+	<h1>Varukorg</h1>
+	{% if session|length == 1 %}
+		<p>Inga varor här</p>
+	{% else %}
+
+	<ul>
+	{% for key,value in cartDict.items()%}
+		<li>{{key|e}} : {{value|e}} st</li>
+
+	{% endfor %}
+	<li class="price"><b>Totala Pris: {{invoice}} SEK</b></li>
+	</ul>
+	<form action="#" method="post">
+	<input class="product-button" type ="submit" name="action" value="Köp">
+	<input class="product-button" type ="submit" name="action" value="Rensa Kundvagn">
+    </form>
+
+	{% endif %}
+
+</div>
+
+
+{% endblock %}

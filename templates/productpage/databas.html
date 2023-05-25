@@ -1,0 +1,24 @@
+{% extends "base.html"%} 
+{% block title %}Kursboksaffären - Databas{% endblock %} 
+{%block content %}
+
+  <div class="product-card">
+    <img class="product-image" src="{{ url_for('static', filename='image/databas.jpg')}}" alt="Product Image">
+    <h2 class="product-title">{{productname}}</h2>
+    <p class="product-description">Författare: {{author}}</p>
+    <p class="product-description">Kurs: {{coursename}}</p>
+    <p class="product-description">ISBN: {{isbn}}</p>
+    <p class="product-price"><b>Pris: {{price}} SEK</b></p>
+    <form action="#" method="post">
+      <button class="product-button">Lägg i varukorg</button>
+    </form>
+  </div>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for msg in messages %}
+        <p>{{msg}}</p>
+      {% endfor %}
+    {% endif %}
+  {% endwith%}
+
+{% endblock %}
